@@ -45,6 +45,7 @@ public final class InvertedIndexJob extends Configured implements Tool {
    * @return the process exit code
    * @throws Exception if something goes wrong
    */
+  @Override
   public int run(final String[] args) throws Exception {
 
     Cli cli = Cli.builder().setArgs(args).addOptions(IOOptions.values()).build();
